@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Production-Ready Blog Post Card Component</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="A modern, accessible blog post card component built with Tailwind CSS">
+</head>
+<body class="bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen py-8 px-4 sm:py-12 sm:px-6 lg:px-8">
+    
+    <div class="max-w-7xl mx-auto">
+        
+        <!-- Page Header -->
+        <header class="mb-12 text-center">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">
+                Blog Post Cards
+            </h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                Production-ready, accessible components with smooth hover interactions
+            </p>
+        </header>
+
+        <!-- Grid Layout - Responsive Blog Cards -->
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-16">
+            
+            <!-- Blog Card 1 - Technology -->
+            <article class="group bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden flex flex-col h-full">
+                
+                <!-- Featured Image Container -->
+                <div class="relative overflow-hidden aspect-video bg-gray-200">
+                    <img 
+                        src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&q=80" 
+                        alt="Software development workspace with multiple monitors displaying code"
+                        class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                        loading="lazy"
+                    >
+                    <!-- Optional overlay for better text readability if needed -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                
+                <!-- Card Content -->
+                <div class="flex flex-col flex-grow p-6 sm:p-7">
+                    
+                    <!-- Category Badge -->
+                    <div class="mb-4">
+                        <span class="inline-flex items-center px-3 py-1.5 bg-blue-50 text-blue-700 text-xs font-semibold rounded-full ring-1 ring-blue-700/10">
+                            Technology
+                        </span>
+                    </div>
+                    
+                    <!-- Blog Title -->
+                    <h2 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 leading-tight group-hover:text-blue-600 transition-colors duration-200">
+                        <a href="#" class="focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded">
+                            Building Scalable Applications with Modern JavaScript Frameworks
+                        </a>
+                    </h2>
+                    
+                    <!-- Excerpt with line clamping -->
+                    <p class="text-gray-600 text-sm sm:text-base leading-relaxed mb-6 line-clamp-3 flex-grow">
+                        Explore the architecture patterns and best practices for creating maintainable, high-performance web applications. Learn how to leverage component composition, state management, and modern tooling to build products that scale.
+                    </p>
+                    
+                    <!-- Post Metadata -->
+                    <div class="flex items-center gap-3 pt-4 border-t border-gray-100">
+                        <img 
+                            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80" 
+                            alt="Portrait of David Chen"
+                            class="w-11 h-11 rounded-full object-cover ring-2 ring-gray-100"
+                            loading="lazy"
+                        >
+                        <div class="flex-grow min-w-0">
+                            <p class="text-sm font-semibold text-gray-900 truncate">David Chen</p>
+                            <div class="flex items-center gap-2 text-xs text-gray-500">
+                                <time datetime="2026-02-10">Feb 10, 2026</time>
+                                <span aria-hidden="true">·</span>
+                                <span>7 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Call to Action -->
+                    <a 
+                        href="#" 
+                        class="mt-5 inline-flex items-center justify-center w-full px-5 py-3 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded-xl transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 group/button"
+                        aria-label="Read full article: Building Scalable Applications with Modern JavaScript Frameworks"
+                    >
+                        Read Full Article
+                        <svg 
+                            class="w-4 h-4 ml-2 transition-transform duration-200 group-hover/button:translate-x-1" 
+                            fill="none" 
+                            stroke="currentColor" 
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Blog Card 2 - Design -->
+            <article class="group bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden flex flex-col h-full">
+                
+                <div class="relative overflow-hidden aspect-video bg-gray-200">
+                    <img 
+                        src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&q=80" 
+                        alt="Designer working on UI/UX mockups with color swatches"
+                        class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                        loading="lazy"
+                    >
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                
+                <div class="flex flex-col flex-grow p-6 sm:p-7">
+                    
+                    <div class="mb-4">
+                        <span class="inline-flex items-center px-3 py-1.5 bg-purple-50 text-purple-700 text-xs font-semibold rounded-full ring-1 ring-purple-700/10">
+                            Design
+                        </span>
+                    </div>
+                    
+                    <h2 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 leading-tight group-hover:text-blue-600 transition-colors duration-200">
+                        <a href="#" class="focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded">
+                            The Psychology of Color in User Interface Design
+                        </a>
+                    </h2>
+                    
+                    <p class="text-gray-600 text-sm sm:text-base leading-relaxed mb-6 line-clamp-3 flex-grow">
+                        Understanding how color influences user behavior and emotional response is crucial for creating effective digital experiences. Discover evidence-based strategies for choosing color palettes that enhance usability and brand perception.
+                    </p>
+                    
+                    <div class="flex items-center gap-3 pt-4 border-t border-gray-100">
+                        <img 
+                            src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" 
+                            alt="Portrait of Sarah Mitchell"
+                            class="w-11 h-11 rounded-full object-cover ring-2 ring-gray-100"
+                            loading="lazy"
+                        >
+                        <div class="flex-grow min-w-0">
+                            <p class="text-sm font-semibold text-gray-900 truncate">Sarah Mitchell</p>
+                            <div class="flex items-center gap-2 text-xs text-gray-500">
+                                <time datetime="2026-02-08">Feb 8, 2026</time>
+                                <span aria-hidden="true">·</span>
+                                <span>5 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a 
+                        href="#" 
+                        class="mt-5 inline-flex items-center justify-center w-full px-5 py-3 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded-xl transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 group/button"
+                        aria-label="Read full article: The Psychology of Color in User Interface Design"
+                    >
+                        Read Full Article
+                        <svg 
+                            class="w-4 h-4 ml-2 transition-transform duration-200 group-hover/button:translate-x-1" 
+                            fill="none" 
+                            stroke="currentColor" 
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Blog Card 3 - Business -->
+            <article class="group bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden flex flex-col h-full">
+                
+                <div class="relative overflow-hidden aspect-video bg-gray-200">
+                    <img 
+                        src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80" 
+                        alt="Business team collaborating in modern office setting"
+                        class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                        loading="lazy"
+                    >
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                
+                <div class="flex flex-col flex-grow p-6 sm:p-7">
+                    
+                    <div class="mb-4">
+                        <span class="inline-flex items-center px-3 py-1.5 bg-emerald-50 text-emerald-700 text-xs font-semibold rounded-full ring-1 ring-emerald-700/10">
+                            Business
+                        </span>
+                    </div>
+                    
+                    <h2 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 leading-tight group-hover:text-blue-600 transition-colors duration-200">
+                        <a href="#" class="focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded">
+                            Remote Team Leadership: Strategies for the Distributed Workplace
+                        </a>
+                    </h2>
+                    
+                    <p class="text-gray-600 text-sm sm:text-base leading-relaxed mb-6 line-clamp-3 flex-grow">
+                        Navigate the challenges of managing distributed teams with proven frameworks for communication, accountability, and culture-building. Learn how top organizations maintain productivity and employee engagement across time zones.
+                    </p>
+                    
+                    <div class="flex items-center gap-3 pt-4 border-t border-gray-100">
+                        <img 
+                            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80" 
+                            alt="Portrait of Marcus Johnson"
+                            class="w-11 h-11 rounded-full object-cover ring-2 ring-gray-100"
+                            loading="lazy"
+                        >
+                        <div class="flex-grow min-w-0">
+                            <p class="text-sm font-semibold text-gray-900 truncate">Marcus Johnson</p>
+                            <div class="flex items-center gap-2 text-xs text-gray-500">
+                                <time datetime="2026-02-06">Feb 6, 2026</time>
+                                <span aria-hidden="true">·</span>
+                                <span>9 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a 
+                        href="#" 
+                        class="mt-5 inline-flex items-center justify-center w-full px-5 py-3 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded-xl transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 group/button"
+                        aria-label="Read full article: Remote Team Leadership: Strategies for the Distributed Workplace"
+                    >
+                        Read Full Article
+                        <svg 
+                            class="w-4 h-4 ml-2 transition-transform duration-200 group-hover/button:translate-x-1" 
+                            fill="none" 
+                            stroke="currentColor" 
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Blog Card 4 - Data Science -->
+            <article class="group bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden flex flex-col h-full">
+                
+                <div class="relative overflow-hidden aspect-video bg-gray-200">
+                    <img 
+                        src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" 
+                        alt="Data analytics dashboard with charts and graphs"
+                        class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                        loading="lazy"
+                    >
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                
+                <div class="flex flex-col flex-grow p-6 sm:p-7">
+                    
+                    <div class="mb-4">
+                        <span class="inline-flex items-center px-3 py-1.5 bg-amber-50 text-amber-700 text-xs font-semibold rounded-full ring-1 ring-amber-700/10">
+                            Data Science
+                        </span>
+                    </div>
+                    
+                    <h2 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 leading-tight group-hover:text-blue-600 transition-colors duration-200">
+                        <a href="#" class="focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded">
+                            Machine Learning Model Deployment in Production Environments
+                        </a>
+                    </h2>
+                    
+                    <p class="text-gray-600 text-sm sm:text-base leading-relaxed mb-6 line-clamp-3 flex-grow">
+                        Bridge the gap between experimentation and production with practical insights on model serving, monitoring, and continuous improvement. Explore MLOps best practices and infrastructure considerations for reliable AI systems.
+                    </p>
+                    
+                    <div class="flex items-center gap-3 pt-4 border-t border-gray-100">
+                        <img 
+                            src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&q=80" 
+                            alt="Portrait of Emily Rodriguez"
+                            class="w-11 h-11 rounded-full object-cover ring-2 ring-gray-100"
+                            loading="lazy"
+                        >
+                        <div class="flex-grow min-w-0">
+                            <p class="text-sm font-semibold text-gray-900 truncate">Emily Rodriguez</p>
+                            <div class="flex items-center gap-2 text-xs text-gray-500">
+                                <time datetime="2026-02-04">Feb 4, 2026</time>
+                                <span aria-hidden="true">·</span>
+                                <span>12 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a 
+                        href="#" 
+                        class="mt-5 inline-flex items-center justify-center w-full px-5 py-3 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded-xl transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 group/button"
+                        aria-label="Read full article: Machine Learning Model Deployment in Production Environments"
+                    >
+                        Read Full Article
+                        <svg 
+                            class="w-4 h-4 ml-2 transition-transform duration-200 group-hover/button:translate-x-1" 
+                            fill="none" 
+                            stroke="currentColor" 
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Blog Card 5 - Marketing -->
+            <article class="group bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden flex flex-col h-full">
+                
+                <div class="relative overflow-hidden aspect-video bg-gray-200">
+                    <img 
+                        src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80" 
+                        alt="Marketing analytics and strategy planning"
+                        class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                        loading="lazy"
+                    >
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                
+                <div class="flex flex-col flex-grow p-6 sm:p-7">
+                    
+                    <div class="mb-4">
+                        <span class="inline-flex items-center px-3 py-1.5 bg-rose-50 text-rose-700 text-xs font-semibold rounded-full ring-1 ring-rose-700/10">
+                            Marketing
+                        </span>
+                    </div>
+                    
+                    <h2 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 leading-tight group-hover:text-blue-600 transition-colors duration-200">
+                        <a href="#" class="focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded">
+                            Content Marketing ROI: Measuring What Actually Matters
+                        </a>
+                    </h2>
+                    
+                    <p class="text-gray-600 text-sm sm:text-base leading-relaxed mb-6 line-clamp-3 flex-grow">
+                        Move beyond vanity metrics with a comprehensive framework for tracking content performance and business impact. Learn to connect engagement data with revenue outcomes and optimize your content strategy accordingly.
+                    </p>
+                    
+                    <div class="flex items-center gap-3 pt-4 border-t border-gray-100">
+                        <img 
+                            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" 
+                            alt="Portrait of Alex Thompson"
+                            class="w-11 h-11 rounded-full object-cover ring-2 ring-gray-100"
+                            loading="lazy"
+                        >
+                        <div class="flex-grow min-w-0">
+                            <p class="text-sm font-semibold text-gray-900 truncate">Alex Thompson</p>
+                            <div class="flex items-center gap-2 text-xs text-gray-500">
+                                <time datetime="2026-02-02">Feb 2, 2026</time>
+                                <span aria-hidden="true">·</span>
+                                <span>8 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a 
+                        href="#" 
+                        class="mt-5 inline-flex items-center justify-center w-full px-5 py-3 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded-xl transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 group/button"
+                        aria-label="Read full article: Content Marketing ROI: Measuring What Actually Matters"
+                    >
+                        Read Full Article
+                        <svg 
+                            class="w-4 h-4 ml-2 transition-transform duration-200 group-hover/button:translate-x-1" 
+                            fill="none" 
+                            stroke="currentColor" 
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Blog Card 6 - Security -->
+            <article class="group bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden flex flex-col h-full">
+                
+                <div class="relative overflow-hidden aspect-video bg-gray-200">
+                    <img 
+                        src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&q=80" 
+                        alt="Cybersecurity and data protection concept"
+                        class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                        loading="lazy"
+                    >
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                
+                <div class="flex flex-col flex-grow p-6 sm:p-7">
+                    
+                    <div class="mb-4">
+                        <span class="inline-flex items-center px-3 py-1.5 bg-red-50 text-red-700 text-xs font-semibold rounded-full ring-1 ring-red-700/10">
+                            Security
+                        </span>
+                    </div>
+                    
+                    <h2 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 leading-tight group-hover:text-blue-600 transition-colors duration-200">
+                        <a href="#" class="focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded">
+                            Zero Trust Architecture: Implementing Modern Security Models
+                        </a>
+                    </h2>
+                    
+                    <p class="text-gray-600 text-sm sm:text-base leading-relaxed mb-6 line-clamp-3 flex-grow">
+                        Transition from perimeter-based security to zero trust principles with practical implementation guidance. Understand identity verification, micro-segmentation, and least-privilege access in contemporary infrastructure.
+                    </p>
+                    
+                    <div class="flex items-center gap-3 pt-4 border-t border-gray-100">
+                        <img 
+                            src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&q=80" 
+                            alt="Portrait of Ryan Lee"
+                            class="w-11 h-11 rounded-full object-cover ring-2 ring-gray-100"
+                            loading="lazy"
+                        >
+                        <div class="flex-grow min-w-0">
+                            <p class="text-sm font-semibold text-gray-900 truncate">Ryan Lee</p>
+                            <div class="flex items-center gap-2 text-xs text-gray-500">
+                                <time datetime="2026-01-31">Jan 31, 2026</time>
+                                <span aria-hidden="true">·</span>
+                                <span>10 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a 
+                        href="#" 
+                        class="mt-5 inline-flex items-center justify-center w-full px-5 py-3 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded-xl transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 group/button"
+                        aria-label="Read full article: Zero Trust Architecture: Implementing Modern Security Models"
+                    >
+                        Read Full Article
+                        <svg 
+                            class="w-4 h-4 ml-2 transition-transform duration-200 group-hover/button:translate-x-1" 
+                            fill="none" 
+                            stroke="currentColor" 
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- Alternative Horizontal Layout Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8">Featured Article - Horizontal Layout</h2>
+            
+            <article class="group bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden flex flex-col sm:flex-row">
+                
+                <!-- Featured Image -->
+                <div class="relative overflow-hidden sm:w-2/5 lg:w-1/2 aspect-video sm:aspect-auto bg-gray-200">
+                    <img 
+                        src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200&q=80" 
+                        alt="Team working together on innovative project"
+                        class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                        loading="lazy"
+                    >
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                
+                <!-- Content -->
+                <div class="flex flex-col flex-grow p-8 sm:p-10 sm:w-3/5 lg:w-1/2">
+                    
+                    <div class="mb-4">
+                        <span class="inline-flex items-center px-3 py-1.5 bg-indigo-50 text-indigo-700 text-xs font-semibold rounded-full ring-1 ring-indigo-700/10">
+                            Featured
+                        </span>
+                    </div>
+                    
+                    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-blue-600 transition-colors duration-200">
+                        <a href="#" class="focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded">
+                            The Future of Work: Adapting to an AI-Augmented Workplace
+                        </a>
+                    </h2>
+                    
+                    <p class="text-gray-600 text-base sm:text-lg leading-relaxed mb-6 flex-grow">
+                        As artificial intelligence reshapes industries and job functions, organizations must prepare their workforce for a new era of human-AI collaboration. This comprehensive guide explores practical strategies for upskilling teams, redesigning workflows, and maintaining competitive advantage in an increasingly automated economy.
+                    </p>
+                    
+                    <div class="flex items-center justify-between gap-6 flex-wrap">
+                        <div class="flex items-center gap-3">
+                            <img 
+                                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" 
+                                alt="Portrait of Jennifer Park"
+                                class="w-12 h-12 rounded-full object-cover ring-2 ring-gray-100"
+                                loading="lazy"
+                            >
+                            <div>
+                                <p class="text-sm font-semibold text-gray-900">Jennifer Park</p>
+                                <div class="flex items-center gap-2 text-xs text-gray-500">
+                                    <time datetime="2026-02-09">Feb 9, 2026</time>
+                                    <span aria-hidden="true">·</span>
+                                    <span>15 min read</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a 
+                            href="#" 
+                            class="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded-xl transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 group/button"
+                            aria-label="Read full article: The Future of Work: Adapting to an AI-Augmented Workplace"
+                        >
+                            Read Full Article
+                            <svg 
+                                class="w-4 h-4 ml-2 transition-transform duration-200 group-hover/button:translate-x-1" 
+                                fill="none" 
+                                stroke="currentColor" 
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                            >
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Compact List Layout Section -->
+        <section>
+            <h2 class="text-3xl font-bold text-gray-900 mb-8">Recent Posts - Compact Layout</h2>
+            
+            <div class="space-y-4">
+                
+                <!-- Compact Card 1 -->
+                <article class="group bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden flex">
+                    
+                    <div class="relative overflow-hidden w-32 sm:w-48 flex-shrink-0 bg-gray-200">
+                        <img 
+                            src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=400&q=80" 
+                            alt="Programming code on screen"
+                            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                            loading="lazy"
+                        >
+                    </div>
+                    
+                    <div class="flex flex-col flex-grow p-4 sm:p-6">
+                        <div class="flex items-start justify-between gap-4 mb-2">
+                            <h3 class="text-base sm:text-lg font-bold text-gray-900 leading-tight group-hover:text-blue-600 transition-colors duration-200 line-clamp-2">
+                                <a href="#" class="focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded">
+                                    Microservices Architecture Patterns for Enterprise Applications
+                                </a>
+                            </h3>
+                            <span class="inline-flex items-center px-2 py-1 bg-blue-50 text-blue-700 text-xs font-semibold rounded flex-shrink-0">
+                                Tech
+                            </span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-3 line-clamp-2 flex-grow">
+                            Explore proven architectural patterns for building and scaling microservices-based systems in production environments.
+                        </p>
+                        <div class="flex items-center gap-2 text-xs text-gray-500">
+                            <span class="font-semibold text-gray-900">Michael Roberts</span>
+                            <span aria-hidden="true">·</span>
+                            <time datetime="2026-02-07">Feb 7, 2026</time>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Compact Card 2 -->
+                <article class="group bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden flex">
+                    
+                    <div class="relative overflow-hidden w-32 sm:w-48 flex-shrink-0 bg-gray-200">
+                        <img 
+                            src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=400&q=80" 
+                            alt="Business team meeting"
+                            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                            loading="lazy"
+                        >
+                    </div>
+                    
+                    <div class="flex flex-col flex-grow p-4 sm:p-6">
+                        <div class="flex items-start justify-between gap-4 mb-2">
+                            <h3 class="text-base sm:text-lg font-bold text-gray-900 leading-tight group-hover:text-blue-600 transition-colors duration-200 line-clamp-2">
+                                <a href="#" class="focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded">
+                                    Product Management in Agile Teams: A Practical Framework
+                                </a>
+                            </h3>
+                            <span class="inline-flex items-center px-2 py-1 bg-emerald-50 text-emerald-700 text-xs font-semibold rounded flex-shrink-0">
+                                Product
+                            </span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-3 line-clamp-2 flex-grow">
+                            Master the art of product ownership with actionable strategies for prioritization, stakeholder management, and delivery.
+                        </p>
+                        <div class="flex items-center gap-2 text-xs text-gray-500">
+                            <span class="font-semibold text-gray-900">Lisa Anderson</span>
+                            <span aria-hidden="true">·</span>
+                            <time datetime="2026-02-05">Feb 5, 2026</time>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-16 text-center text-sm text-gray-500 pb-8">
+        <p>Production-ready Blog Post Card Component • Built with Tailwind CSS</p>
+    </footer>
+
+</body>
+</html>
